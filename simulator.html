@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   body {
     font-family: 'DM Sans', sans-serif;
     background: #fff;
@@ -17,7 +17,7 @@
     height: 100vh;
     overflow: hidden;
   }
-
+ 
   /* ── NAV ── */
   .top-nav {
     display: flex;
@@ -29,7 +29,7 @@
     flex-shrink: 0;
     gap: 0;
   }
-
+ 
   .nav-brand {
     font-family: 'DM Serif Display', serif;
     font-size: 13px;
@@ -38,7 +38,7 @@
     letter-spacing: 0.2px;
     flex-shrink: 0;
   }
-
+ 
   .nav-tab {
     display: flex;
     align-items: center;
@@ -52,17 +52,17 @@
     cursor: pointer;
     white-space: nowrap;
   }
-
+ 
   .nav-tab:hover { color: #1a1a1a; }
   .nav-tab.active { color: #1a1a1a; border-bottom-color: #1a1a1a; font-weight: 500; }
-
+ 
   /* ── BODY LAYOUT ── */
   .app-body {
     display: flex;
     flex: 1;
     overflow: hidden;
   }
-
+ 
   /* ── SIDE PANEL ── */
   .side-panel {
     width: 300px;
@@ -73,12 +73,12 @@
     background: #fafafa;
     overflow: hidden;
   }
-
+ 
   .side-header {
     padding: 24px 24px 20px;
     border-bottom: 1px solid #e8e8e8;
   }
-
+ 
   .side-header h1 {
     font-family: 'DM Serif Display', serif;
     font-size: 20px;
@@ -86,20 +86,20 @@
     color: #1a1a1a;
     line-height: 1.3;
   }
-
+ 
   .side-header p {
     margin-top: 6px;
     font-size: 11px;
     line-height: 1.6;
     color: #888;
   }
-
+ 
   /* ── SCENARIOS ── */
   .scenarios {
     padding: 16px 24px;
     border-bottom: 1px solid #e8e8e8;
   }
-
+ 
   .section-label {
     font-size: 10px;
     font-weight: 700;
@@ -108,13 +108,13 @@
     color: #999;
     margin-bottom: 10px;
   }
-
+ 
   .scenario-btns {
     display: flex;
     flex-direction: column;
     gap: 5px;
   }
-
+ 
   .sc-btn {
     display: flex;
     align-items: center;
@@ -130,41 +130,41 @@
     transition: all 0.15s;
     text-align: left;
   }
-
+ 
   .sc-btn:hover { border-color: #ccc; background: #f5f5f5; color: #1a1a1a; }
   .sc-btn.active { border-color: #1a1a1a; color: #1a1a1a; font-weight: 500; }
-
+ 
   .sc-dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     flex-shrink: 0;
   }
-
+ 
   .sc-btn .reset-lbl { margin-left: auto; font-size: 10px; color: #bbb; }
   .sc-btn.active .reset-lbl { color: #888; }
-
+ 
   /* ── KRI SLIDERS ── */
   .kri-scroll {
     flex: 1;
     overflow-y: auto;
     padding: 16px 24px;
   }
-
+ 
   .kri-item {
     padding: 9px 0;
     border-bottom: 1px solid #f0f0f0;
   }
-
+ 
   .kri-item:last-child { border-bottom: none; }
-
+ 
   .kri-top {
     display: flex;
     align-items: baseline;
     gap: 6px;
     margin-bottom: 4px;
   }
-
+ 
   .kri-id {
     font-size: 10px;
     font-weight: 700;
@@ -172,14 +172,14 @@
     min-width: 38px;
     flex-shrink: 0;
   }
-
+ 
   .kri-name {
     font-size: 11px;
     color: #555;
     flex: 1;
     line-height: 1.3;
   }
-
+ 
   .kri-val {
     font-size: 11px;
     font-weight: 500;
@@ -187,7 +187,7 @@
     white-space: nowrap;
     text-align: right;
   }
-
+ 
   .kri-dot {
     width: 7px;
     height: 7px;
@@ -195,11 +195,11 @@
     flex-shrink: 0;
     margin-left: 4px;
   }
-
+ 
   .dot-v { background: #27ae60; }
   .dot-j { background: #e67e22; }
   .dot-r { background: #c0392b; }
-
+ 
   input[type="range"] {
     width: 100%;
     height: 3px;
@@ -211,7 +211,7 @@
     cursor: pointer;
     margin: 2px 0;
   }
-
+ 
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 13px;
@@ -222,7 +222,7 @@
     border: 2px solid #fff;
     box-shadow: 0 0 0 1px #1a1a1a;
   }
-
+ 
   .kri-thr {
     display: flex;
     justify-content: space-between;
@@ -230,14 +230,14 @@
     color: #bbb;
     margin-top: 1px;
   }
-
+ 
   .kri-cascade {
     font-size: 9.5px;
     color: #e67e22;
     margin-top: 2px;
     display: none;
   }
-
+ 
   /* ── STATUS BAR ── */
   .status-bar {
     padding: 12px 24px;
@@ -246,9 +246,9 @@
     align-items: center;
     gap: 10px;
   }
-
+ 
   .global-label { font-size: 10px; color: #888; }
-
+ 
   .global-pill {
     padding: 3px 12px;
     border-radius: 20px;
@@ -256,11 +256,11 @@
     font-weight: 600;
     letter-spacing: 0.3px;
   }
-
+ 
   .pill-v { background: #eafaf1; color: #1e8449; }
   .pill-j { background: #fef9e7; color: #d68910; }
   .pill-r { background: #fdf2f2; color: #c0392b; }
-
+ 
   .meth-hint {
     margin-left: auto;
     font-size: 9px;
@@ -269,7 +269,7 @@
     line-height: 1.4;
     max-width: 130px;
   }
-
+ 
   /* ── MAIN AREA ── */
   .main-area {
     flex: 1;
@@ -279,7 +279,7 @@
     flex-direction: column;
     gap: 20px;
   }
-
+ 
   .area-label {
     font-size: 10px;
     font-weight: 700;
@@ -288,76 +288,139 @@
     color: #999;
     margin-bottom: 12px;
   }
-
-  /* ── BOWTIE GRID ── */
-  .bt-grid {
+ 
+  /* ── CAUSE GRID ── */
+  .cause-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
   }
-
-  .bt-card {
+ 
+  .cause-card {
     border: 1px solid #e8e8e8;
     border-radius: 8px;
     padding: 12px;
     background: #fff;
     transition: border-color 0.2s, background 0.2s;
+    position: relative;
   }
-
-  .bt-card.state-j { border-color: #f39c12; background: #fffcf4; }
-  .bt-card.state-r { border-color: #c0392b; background: #fdf5f5; }
-
-  .bt-obj {
-    font-size: 9px;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    color: #bbb;
+ 
+  .cause-card.state-j { border-color: #f39c12; background: #fffcf4; }
+  .cause-card.state-r { border-color: #c0392b; background: #fdf5f5; }
+ 
+  .cause-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    gap: 6px;
+  }
+ 
+  .cause-rank {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: #ddd;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+ 
+  .cause-score-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    flex-shrink: 0;
+  }
+ 
+  .cause-score {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+ 
+  .zone-pill {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+ 
+  .zone-r { background: #fdf2f2; color: #c0392b; }
+  .zone-j { background: #fef9e7; color: #d68910; }
+  .zone-o { background: #fef0e0; color: #c0710a; }
+ 
+  .cause-id-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     margin-bottom: 3px;
   }
-
-  .bt-lbl {
-    font-family: 'DM Serif Display', serif;
-    font-size: 13px;
-    font-weight: 400;
-    color: #1a1a1a;
-    line-height: 1.3;
+ 
+  .cause-id {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+  }
+ 
+  .cause-bt {
+    font-size: 9px;
+    color: #bbb;
+  }
+ 
+  .cause-lbl {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.35;
     margin-bottom: 8px;
-    min-height: 34px;
+    min-height: 30px;
   }
-
-  .bt-kris {
+ 
+  .cause-kri-row {
     display: flex;
-    flex-wrap: wrap;
-    gap: 3px;
+    align-items: center;
+    gap: 5px;
+    padding-top: 7px;
+    border-top: 1px solid #f0f0f0;
   }
-
+ 
   .kri-chip {
     font-size: 9px;
     font-weight: 600;
     padding: 2px 6px;
     border-radius: 3px;
     font-family: 'DM Sans', sans-serif;
+    white-space: nowrap;
   }
-
+ 
+  .kri-chip-name {
+    font-size: 9.5px;
+    color: #888;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+ 
   .chip-v { background: #eafaf1; color: #1e8449; }
   .chip-j { background: #fef9e7; color: #d68910; }
   .chip-r { background: #fdf2f2; color: #c0392b; }
   .chip-n { background: #f5f5f5; color: #bbb; }
-
+ 
   /* ── BOTTOM PANELS ── */
   .bottom-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
   }
-
+ 
   .info-card {
     background: #fafafa;
     border: 1px solid #e8e8e8;
     border-radius: 8px;
     padding: 16px;
   }
-
+ 
   .cascade-item {
     display: flex;
     gap: 8px;
@@ -368,13 +431,13 @@
     margin-bottom: 5px;
     align-items: flex-start;
   }
-
+ 
   .cascade-arrow { font-size: 10px; color: #e67e22; padding-top: 1px; flex-shrink: 0; }
-
+ 
   .cascade-text { font-size: 11px; color: #555; line-height: 1.5; }
   .cascade-from { font-weight: 700; color: #c0392b; }
   .cascade-to { font-weight: 600; color: #e67e22; }
-
+ 
   .action-item {
     padding: 8px 12px;
     border-left: 2px solid #c0392b;
@@ -382,7 +445,7 @@
     background: #fdf5f5;
     margin-bottom: 5px;
   }
-
+ 
   .action-id {
     font-size: 9px;
     font-weight: 700;
@@ -391,18 +454,18 @@
     letter-spacing: 0.5px;
     margin-bottom: 2px;
   }
-
+ 
   .action-txt { font-size: 10.5px; color: #555; line-height: 1.5; }
-
+ 
   .empty-state { font-size: 11px; color: #bbb; font-style: italic; }
-
+ 
   /* ── LOG ── */
   .log-section {
     border: 1px solid #e8e8e8;
     border-radius: 8px;
     overflow: hidden;
   }
-
+ 
   .log-header {
     padding: 8px 14px;
     border-bottom: 1px solid #e8e8e8;
@@ -411,9 +474,9 @@
     align-items: center;
     justify-content: space-between;
   }
-
+ 
   .log-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #999; }
-
+ 
   .log-clear {
     font-size: 10px;
     color: #bbb;
@@ -423,16 +486,16 @@
     font-family: 'DM Sans', sans-serif;
     padding: 0;
   }
-
+ 
   .log-clear:hover { color: #888; }
-
+ 
   .log-body {
     max-height: 90px;
     overflow-y: auto;
     padding: 8px 14px;
     background: #fff;
   }
-
+ 
   .log-entry {
     font-size: 10px;
     font-family: 'DM Sans', sans-serif;
@@ -441,13 +504,13 @@
     display: flex;
     gap: 8px;
   }
-
+ 
   .log-t { color: #ddd; min-width: 36px; }
   .log-v { color: #27ae60; }
   .log-j { color: #e67e22; }
   .log-r { color: #c0392b; }
   .log-sys { color: #bbb; }
-
+ 
   /* ── METHOD NOTE ── */
   .method-note {
     font-size: 10px;
@@ -456,9 +519,9 @@
     padding-top: 4px;
     border-top: 1px solid #f0f0f0;
   }
-
+ 
   .method-note b { font-weight: 600; color: #999; }
-
+ 
   .watermark {
     font-size: 9px;
     color: #ddd;
@@ -468,24 +531,24 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav class="top-nav">
   <span class="nav-brand">UBS</span>
   <a class="nav-tab" href="index.html">Carte de contagion</a>
   <a class="nav-tab active" href="simulator.html">Simulateur de crise</a>
 </nav>
-
+ 
 <div class="app-body">
-
+ 
   <!-- SIDE PANEL -->
   <div class="side-panel">
-
+ 
     <div class="side-header">
       <h1>Simulateur de scénario de crise</h1>
       <p>Déplacez un curseur KRI vers le rouge pour observer les cascades et les actions déclenchées.</p>
     </div>
-
+ 
     <div class="scenarios">
       <div class="section-label">Scénarios préréglés</div>
       <div class="scenario-btns">
@@ -511,25 +574,25 @@
         </button>
       </div>
     </div>
-
+ 
     <div class="kri-scroll" id="kri-list"></div>
-
+ 
     <div class="status-bar">
       <span class="global-label">Risque global</span>
       <span class="global-pill pill-v" id="global-pill">NOMINAL</span>
       <div class="meth-hint">Critique → 1 rouge<br>Index → 2 rouges</div>
     </div>
   </div>
-
+ 
   <!-- MAIN AREA -->
   <div class="main-area">
-
-    <!-- BOW-TIES -->
+ 
+    <!-- CAUSE GRID -->
     <div>
-      <div class="area-label">Bow-ties — État par objectif</div>
-      <div class="bt-grid" id="bt-grid"></div>
+      <div class="area-label">9 causes prioritaires — Score P×I · Bow-tie · KRI associé</div>
+      <div class="cause-grid" id="cause-grid"></div>
     </div>
-
+ 
     <!-- CASCADES + ACTIONS -->
     <div class="bottom-row">
       <div class="info-card">
@@ -541,7 +604,7 @@
         <div id="act-list"><div class="empty-state">Aucune action requise.</div></div>
       </div>
     </div>
-
+ 
     <!-- LOG -->
     <div class="log-section">
       <div class="log-header">
@@ -552,7 +615,7 @@
         <div class="log-entry"><span class="log-t">00:00</span><span class="log-sys">Simulateur initialisé — 9 KRIs en zone verte.</span></div>
       </div>
     </div>
-
+ 
     <!-- METHOD NOTE -->
     <div>
       <div class="method-note">
@@ -563,13 +626,13 @@
       </div>
       <div class="watermark" style="margin-top:8px">Sources : UBS Annual Report 2024 · Pillar 3 Report 2025 · ORM IESEG 2025 (D. Lannoy)</div>
     </div>
-
+ 
   </div>
 </div>
-
+ 
 <script>
 const OBJ_COLORS = { 1: '#c0392b', 2: '#d4880f', 3: '#2471a3' };
-
+ 
 const KRIS = [
   { id:'KRI-1', nm:'Clic phishing simulé', bt:'BT-2.1', u:'%',       vert:5,  jaune:15, max:40,  step:1,    inv:false, action:"Formation obligatoire + blocage PJ 48h + audit des comptes compromis." },
   { id:'KRI-2', nm:'Legacy CS sans correctif', bt:'BT-2.2', u:'%',   vert:20, jaune:60, max:100, step:1,    inv:false, action:"Isolation réseau + décommissionnement accéléré + rapport d'urgence CISO/Board." },
@@ -581,19 +644,19 @@ const KRIS = [
   { id:'KRI-8', nm:'Attaques ciblant la fusion', bt:'BT-2.1', u:'incidents', vert:3, jaune:10, max:20, step:1, inv:false, action:"SOC 24/7 renforcé + segmentation réseau + gel accès croisés non essentiels." },
   { id:'KRI-9', nm:'Postes vacants legacy CS', bt:'BT-2.2', u:'%',   vert:10, jaune:30, max:100, step:1,    inv:false, action:"Consulting ex-CS urgent + primes de rétention + documentation systèmes critiques." },
 ];
-
-const BTS = [
-  { id:'BT-1.1', lbl:'Panne IT lors du transfert',         obj:1, kris:[] },
-  { id:'BT-1.2', lbl:'Erreurs données portefeuilles',      obj:1, kris:['KRI-3'] },
-  { id:'BT-1.3', lbl:'Vol de données migration',           obj:1, kris:[] },
-  { id:'BT-2.1', lbl:'Ransomware (double extorsion)',      obj:2, kris:['KRI-1','KRI-8'] },
-  { id:'BT-2.2', lbl:'Exfiltration systèmes CS',          obj:2, kris:['KRI-2','KRI-4','KRI-9'] },
-  { id:'BT-2.3', lbl:'Compromission prestataire',         obj:2, kris:['KRI-5'] },
-  { id:'BT-3.1', lbl:'Scandale pratiques de conseil',     obj:3, kris:['KRI-6'] },
-  { id:'BT-3.2', lbl:'Dégradation plateformes digitales', obj:3, kris:[] },
-  { id:'BT-3.3', lbl:'Sanction réglementaire cross-border', obj:3, kris:['KRI-7'] },
+ 
+const CAUSES = [
+  { rank:1, id:'2.1a', lbl:'Employé victime de phishing imitant une communication interne',      bt:'BT 2.1', obj:2, score:20, zone:'r', kri:'KRI-1' },
+  { rank:2, id:'2.2a', lbl:'Systèmes legacy CS ne recevant plus les correctifs de sécurité',     bt:'BT 2.2', obj:2, score:20, zone:'r', kri:'KRI-2' },
+  { rank:3, id:'1.2c', lbl:'Contrôles de réconciliation reposant sur des vérifications manuelles', bt:'BT 1.2', obj:1, score:16, zone:'o', kri:'KRI-3' },
+  { rank:4, id:'2.2c', lbl:'Absence de procédure formalisée de surveillance des systèmes EOL',   bt:'BT 2.2', obj:2, score:16, zone:'o', kri:'KRI-4' },
+  { rank:5, id:'2.3b', lbl:'Contrats prestataires sans clause d\'audit cybersécurité UBS',       bt:'BT 2.3', obj:2, score:16, zone:'o', kri:'KRI-5' },
+  { rank:6, id:'3.1b', lbl:'Procédures d\'adéquation produit-client non harmonisées',            bt:'BT 3.1', obj:3, score:16, zone:'o', kri:'KRI-6' },
+  { rank:7, id:'3.3b', lbl:'Pratiques héritées de CS pour l\'accueil de clients non conformes', bt:'BT 3.3', obj:3, score:16, zone:'o', kri:'KRI-7' },
+  { rank:8, id:'2.1c', lbl:'Groupes criminels ciblant délibérément les organisations en fusion', bt:'BT 2.1', obj:2, score:15, zone:'o', kri:'KRI-8' },
+  { rank:9, id:'2.2b', lbl:'Perte d\'expertise sur les anciens systèmes après départ des experts CS', bt:'BT 2.2', obj:2, score:15, zone:'o', kri:'KRI-9' },
 ];
-
+ 
 const CASCADES = {
   'KRI-1': { e:['KRI-8'],       r:'Phishing réussi → vecteur d\'attaque fusion activé (KRI-8).' },
   'KRI-2': { e:['KRI-4','KRI-9'], r:'Non-patch legacy → pression sur surveillance EOL (KRI-4) et experts (KRI-9).' },
@@ -604,39 +667,39 @@ const CASCADES = {
   'KRI-7': { e:['KRI-6'],       r:'Infractions détectées → alerte sur niveau de certification (KRI-6).' },
   'KRI-8': { e:['KRI-1'],       r:'Volume d\'attaques → pression phishing accrue (KRI-1).' },
 };
-
+ 
 const CRIT = ['KRI-1','KRI-2','KRI-7'];
 const IDX  = ['KRI-3','KRI-4','KRI-9'];
-
+ 
 const SCENARIOS = {
   cyber: { 'KRI-1':28, 'KRI-2':72, 'KRI-8':14 },
   reg:   { 'KRI-6':22, 'KRI-7':34, 'KRI-3':0.7 },
   mig:   { 'KRI-3':0.85, 'KRI-9':42, 'KRI-4':36 },
 };
-
+ 
 const DEFAULTS = { 'KRI-1':2,'KRI-2':10,'KRI-3':0.05,'KRI-4':5,'KRI-5':7,'KRI-6':90,'KRI-7':2,'KRI-8':1,'KRI-9':5 };
-
+ 
 let vals = {...DEFAULTS};
 let prevSt = {};
 let t0 = Date.now();
-
+ 
 function elapsed() {
   const s = Math.floor((Date.now()-t0)/1000);
   return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
 }
-
+ 
 function st(k, v) {
   const f = parseFloat(v);
   if (k.inv) { if (f >= k.vert) return 'v'; if (f >= k.jaune) return 'j'; return 'r'; }
   else        { if (f <= k.vert) return 'v'; if (f <= k.jaune) return 'j'; return 'r'; }
 }
-
+ 
 function allSt() {
   const s = {};
   KRIS.forEach(k => { s[k.id] = st(k, vals[k.id]); });
   return s;
 }
-
+ 
 function globalSt(ss) {
   if (CRIT.some(id => ss[id] === 'r')) return 'r';
   if (IDX.filter(id => ss[id] === 'r').length >= 2) return 'r';
@@ -644,7 +707,7 @@ function globalSt(ss) {
   if (Object.values(ss).some(s => s === 'j')) return 'j';
   return 'v';
 }
-
+ 
 function getCascades(ss) {
   const triggered = {};
   Object.entries(CASCADES).forEach(([from, c]) => {
@@ -657,12 +720,12 @@ function getCascades(ss) {
   });
   return triggered;
 }
-
+ 
 function fmt(k, v) {
   const f = parseFloat(v);
   return k.step < 1 ? f.toFixed(2) : String(Math.round(f));
 }
-
+ 
 function addLog(msg, cls) {
   const body = document.getElementById('log-body');
   const d = document.createElement('div');
@@ -671,21 +734,21 @@ function addLog(msg, cls) {
   body.insertBefore(d, body.firstChild);
   while (body.children.length > 40) body.removeChild(body.lastChild);
 }
-
+ 
 function clearLog() {
   document.getElementById('log-body').innerHTML = '<div class="log-entry"><span class="log-t">--:--</span><span class="log-sys">Journal effacé.</span></div>';
 }
-
+ 
 function render() {
   const ss = allSt();
   const cascades = getCascades(ss);
   const gs = globalSt(ss);
-
+ 
   // Global pill
   const pill = document.getElementById('global-pill');
   pill.className = 'global-pill ' + { v:'pill-v', j:'pill-j', r:'pill-r' }[gs];
   pill.textContent = { v:'NOMINAL', j:'ÉLEVÉ', r:'CRITIQUE' }[gs];
-
+ 
   // KRI sliders
   KRIS.forEach(k => {
     const s = ss[k.id];
@@ -709,28 +772,21 @@ function render() {
       addLog(`${k.id} (${k.nm}) → ${labels[s]}`, cls[s]);
     }
   });
-
-  // BT cards
-  BTS.forEach(bt => {
-    const card = document.getElementById('bt-'+bt.id);
+ 
+  // Cause cards
+  CAUSES.forEach(c => {
+    const card = document.getElementById('cc-'+c.id);
     if (!card) return;
-    const btStates = bt.kris.map(id => ss[id]);
-    const s = btStates.includes('r') ? 'r' : btStates.includes('j') ? 'j' : 'v';
-    card.className = 'bt-card' + (s==='j' ? ' state-j' : s==='r' ? ' state-r' : '');
-    const chips = document.getElementById('ch-'+bt.id);
-    if (chips) {
-      if (!bt.kris.length) {
-        chips.innerHTML = '<span class="kri-chip chip-n">non surveillé</span>';
-      } else {
-        chips.innerHTML = bt.kris.map(id => {
-          const cs = ss[id];
-          const flag = cascades[id] ? ' ↑' : '';
-          return `<span class="kri-chip chip-${cs}">${id}${flag}</span>`;
-        }).join('');
-      }
+    const s = ss[c.kri];
+    card.className = 'cause-card' + (s==='j' ? ' state-j' : s==='r' ? ' state-r' : '');
+    const chip = document.getElementById('chip-'+c.id);
+    if (chip) {
+      const flag = cascades[c.kri] ? ' ↑' : '';
+      chip.className = 'kri-chip chip-'+s;
+      chip.textContent = c.kri + flag;
     }
   });
-
+ 
   // Cascades list
   const cl = document.getElementById('casc-list');
   const allCasc = [];
@@ -750,7 +806,7 @@ function render() {
       </div>`
     ).join('');
   }
-
+ 
   // Actions list
   const al = document.getElementById('act-list');
   const redKRIs = KRIS.filter(k => ss[k.id] === 'r');
@@ -764,15 +820,15 @@ function render() {
       </div>`
     ).join('');
   }
-
+ 
   Object.assign(prevSt, ss);
 }
-
+ 
 function updateKRI(id, v) {
   vals[id] = parseFloat(v);
   render();
 }
-
+ 
 function resetAll() {
   vals = {...DEFAULTS};
   KRIS.forEach(k => {
@@ -786,7 +842,7 @@ function resetAll() {
     '<div class="log-entry"><span class="log-t">00:00</span><span class="log-sys">Réinitialisé — 9 KRIs en zone verte.</span></div>';
   render();
 }
-
+ 
 function setScenario(type) {
   resetAll();
   if (type === 'reset') return;
@@ -804,7 +860,7 @@ function setScenario(type) {
   addLog(labels[type], 'log-r');
   render();
 }
-
+ 
 function buildKRIList() {
   const c = document.getElementById('kri-list');
   c.innerHTML = KRIS.map(k => {
@@ -835,29 +891,42 @@ function buildKRIList() {
       </div>`;
   }).join('');
 }
-
-function buildBTGrid() {
-  const c = document.getElementById('bt-grid');
-  c.innerHTML = BTS.map(bt => {
-    const col = OBJ_COLORS[bt.obj];
+ 
+function buildCauseGrid() {
+  const c = document.getElementById('cause-grid');
+  c.innerHTML = CAUSES.map(cause => {
+    const col = OBJ_COLORS[cause.obj];
+    const scoreCol = cause.zone === 'r' ? '#c0392b' : '#c0710a';
+    const zoneLbl = cause.zone === 'r' ? 'ROUGE' : 'ORANGE';
+    const zoneClass = cause.zone === 'r' ? 'zone-r' : 'zone-o';
+    const kriObj = KRIS.find(k => k.id === cause.kri);
     return `
-      <div class="bt-card" id="bt-${bt.id}">
-        <div class="bt-obj" style="color:${col}">Obj. ${bt.obj}</div>
-        <div class="bt-lbl">${bt.lbl}</div>
-        <div class="bt-kris" id="ch-${bt.id}">
-          ${bt.kris.length === 0
-            ? '<span class="kri-chip chip-n">non surveillé</span>'
-            : bt.kris.map(id => `<span class="kri-chip chip-v">${id}</span>`).join('')}
+      <div class="cause-card" id="cc-${cause.id}">
+        <div class="cause-top">
+          <span class="cause-rank">#${cause.rank}</span>
+          <div class="cause-score-zone">
+            <span class="cause-score" style="color:${scoreCol}">${cause.score}</span>
+            <span class="zone-pill ${zoneClass}">${zoneLbl}</span>
+          </div>
+        </div>
+        <div class="cause-id-row">
+          <span class="cause-id" style="color:${col}">${cause.id}</span>
+          <span class="cause-bt">${cause.bt}</span>
+        </div>
+        <div class="cause-lbl">${cause.lbl}</div>
+        <div class="cause-kri-row">
+          <span class="kri-chip chip-v" id="chip-${cause.id}">${cause.kri}</span>
+          <span class="kri-chip-name">${kriObj ? kriObj.nm : ''}</span>
         </div>
       </div>`;
   }).join('');
 }
-
+ 
 buildKRIList();
-buildBTGrid();
+buildCauseGrid();
 Object.assign(prevSt, allSt());
 render();
 </script>
-
+ 
 </body>
 </html>
